@@ -25,10 +25,12 @@ This paper presents a new lossless color image compression method based on the l
 
 ### <u>Overall framework of proposed method</u>
 
-<p align="center"><img src="figure/method_1.png" width="700"></p>
+<p align="center"><img src="figure/method1.png" width="700"></p>
 
 We first apply a reversible color transform proposed in to the input RGB images to decorrelate the color components. Then, for each encoding pixel, prediction for the pixel value and coding context are simultaneously generated in the raster scan order. Afterward,
 to utilize the AAC as our entropy coder, we quantize the obtained real-valued coding contexts into N steps, where the level of the quantized coding context is proportional to the magnitude of the local activity. In AAC, individual entropy coder is employed for each quantized coding context, because the statistics of prediction error differs depending on the local activity. Finally, the prediction error is compressed into a bitstream based on the corresponding quantized coding context through the AAC.
+
+<p align="center"><img src="figure/method2.png" width="700"></p>
 
 ## Experimental Results
 
@@ -44,13 +46,25 @@ Comparison of our method with other engineered and learning based codecs. We mea
 
 Comparision of computation time (CPU time in seconds). We compared times for 512 x 512 image.
 
+**Ablation Study**
+
+<p align="center"><img src="figure/result_ablation.png" width="350"></p>
+
+**Prediction Error**
+
+<p align="center"><img src="figure/result_prederror.png" width="350"></p>
+
+**Coding Context**
+
+<p align="center"><img src="figure/result_ctx.png" width="350"></p>
+
 **Test Data**
 
 [MCM]   (https://www4.comp.polyu.edu.hk/~cslzhang/CDM_Dataset.htm)
 
 [DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
 
-[Open Images] (https://storage.googleapis.com/openimages/web/index.html)
+[Flickr2K] (https://github.com/limbee/NTIRE2017)
 
 ## Brief explanation of contents
 
