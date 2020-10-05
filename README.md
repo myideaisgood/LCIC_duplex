@@ -25,7 +25,7 @@ This paper presents a new lossless color image compression method based on the l
 
 ### <u>Overall framework of proposed method</u>
 
-<p align="center"><img src="figure/method.png" width="700"></p>
+<p align="center"><img src="figure/method_1.png" width="700"></p>
 
 We first apply a reversible color transform proposed in to the input RGB images to decorrelate the color components. Then, for each encoding pixel, prediction for the pixel value and coding context are simultaneously generated in the raster scan order. Afterward,
 to utilize the AAC as our entropy coder, we quantize the obtained real-valued coding contexts into N steps, where the level of the quantized coding context is proportional to the magnitude of the local activity. In AAC, individual entropy coder is employed for each quantized coding context, because the statistics of prediction error differs depending on the local activity. Finally, the prediction error is compressed into a bitstream based on the corresponding quantized coding context through the AAC.
