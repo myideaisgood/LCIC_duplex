@@ -104,10 +104,15 @@ Make sure MLP weights.txt and input images are saved at c_compression/x64/Releas
 
 **Encoding**
 ```
-ICIP_Compression.exe e [source file (ppm)] [compressed file (bin)]
+LCIC_duplex.exe e [source_file (ppm)] [compressed_file (bin)]
 ```
+
+Creates compressed_file_y.bin, compressed_file_u.bin, compressed_file_v.bin.
 
 **Decoding**
 ```
-ICIP_Compression.exe d [compressed file (bin)] [decoded file (ppm)]
+LCIC_duplex.exe d [compressed_file (bin)] [decoded_file (ppm)]
 ```
+
+In case of compreesed_file_y.bin, compressed_file_u.bin, compressed_file_v.bin, the input should be compressed_file.bin.
+Creates decoded_file.ppm.
