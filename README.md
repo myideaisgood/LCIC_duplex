@@ -82,6 +82,7 @@ Analysis of the predicted coding contexts.
     ├──> board   : tensorboard logs will be saved here
     └──> dataset : train/test data should be saved here
 └── c_compression : c++ code for compressing images with MLP weights obtained from python code
+    └──> x64/Release    : weights & images should be saved here
 
 ```
 
