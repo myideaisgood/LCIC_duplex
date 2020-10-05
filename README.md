@@ -1,4 +1,4 @@
-Implementation of "CHANNEL-WISE PROGRESSIVE LEARNING FOR LOSSLESS IMAGE COMPRESSION"
+Implementation of "Lossless Color Image Compresion by Joint Prediction of Pixel and Coding Context Using Duplex Neural Networks"
 
 Hochang Rhee, Yeong Il Jang, Seyun Kim, and Nam Ik Cho
 
@@ -10,8 +10,7 @@ Hochang Rhee, Yeong Il Jang, Seyun Kim, and Nam Ik Cho
 
 ## Abstract
 
-This paper presents a channel-wise progressive coding system for lossless compression of color images. We follow the classical lossless compression scheme of LOCO-I and CALIC, where pixel values and coding contexts are predicted and forwarded to the entropy coder for compression. The contribution is that we jointly estimate the pixel values and coding contexts from neighboring pixels by training a simple multilayer perceptron in a residual and channel-wise progressive manner. Specifically, we obtain accurate pixel prediction along with coding contexts that reflect the magnitude of local activity very well. These results are sent to an adaptive arithmetic coder that appropriately encodes the prediction error according to the corresponding coding context. Experimental results demonstrate the effectiveness of the proposed method in high-resolution datasets.
-<br><br>
+This paper presents a new lossless color image compression method based on the learning of pixel values and coding contexts through a multiplayer perceptron (MLP). The pixel prediction error and contexts are forwarded to an adaptive arithmetic encoder, like the conventional lossless compression schemes. The neural net-based prediction has long been attempted for the lossless compression, and recently convolutional neural networks (CNNs) are also adopted for the lossy/lossless coding. While the existing MLP-based lossless compression schemes focused only on the accurate pixel prediction, we jointly predict the pixel values and coding contexts. We also propose channel-wise progressive learning, residual learning, and duplex network in this MLPbased framework, which leads to improved coding gain compared to the conventional method. Experiments show that the proposed method performs better or comparable to the recent learningbased and conventional compression methods.
 
 ## Related Work
 [LCIC (TIP 2013)] Hiearchical Predication and Context Adaptive Coding for Lossless Color Image Compression <a href="https://github.com/jyicu/LCIC">LCIC</a>
@@ -19,6 +18,8 @@ This paper presents a channel-wise progressive coding system for lossless compre
 [FLIF (ICIP 2016)] Free Lossless Image Format Based on MANIAC Compression <a href="https://github.com/FLIF-hub/FLIF">FLIF</a>
 
 [L3C (CVPR 2019)] Practical Full Resolution Learned Lossless Image Compression <a href="https://github.com/fab-jul/L3C-PyTorch">L3C</a>
+
+[CWPLIC (ICIP 2020)] Channel-wise Progressive Learning for Lossless Image Compression <a href="https://github.com/myideaisgood/CWPLIC">CWPLIC</a>
 
 ## Proposed Method
 
