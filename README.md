@@ -36,7 +36,7 @@ to utilize the AAC as our entropy coder, we quantize the obtained real-valued co
 
 **Results on compression performance**
 
-<p align="center"><img src="figure/result_bpp.png" width="700"></p>
+<p align="center"><img src="figure/result_bpp.png" width="1000"></p>
 
 Comparison of our method with other engineered and learning based codecs. We measure the performances in bits per pixel (bpp). The difference in percentage to our method is highlighted in green if our method outperforms and in red otherwise.
 
@@ -48,15 +48,15 @@ Comparision of computation time (CPU time in seconds). We compared times for 512
 
 **Ablation Study**
 
-<p align="center"><img src="figure/result_ablation.png" width="350"></p>
+<p align="center"><img src="figure/result_ablation.png" width="500"></p>
 
 **Prediction Error**
 
-<p align="center"><img src="figure/result_prederror.png" width="700"></p>
+<p align="center"><img src="figure/result_prederror.png" width="1000"></p>
 
 **Coding Context**
 
-<p align="center"><img src="figure/result_ctx.png" width="700"></p>
+<p align="center"><img src="figure/result_ctx.png" width="1000"></p>
 
 **Test Data**
 
