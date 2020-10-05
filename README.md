@@ -80,7 +80,7 @@ Analysis of the predicted coding contexts.
 ├── python_weights_training : python code for training MLP weights
     ├──> ckpt    : trained models will be saved here
     ├──> board   : tensorboard logs will be saved here
-    └──> dataset : train/test data should be saved here
+    └──> dataset/train : train data should be saved here (no test data required for MLP training)
 └── c_compression : c++ code for compressing images with MLP weights obtained from python code
     └──> x64/Release    : weights & images should be saved here
 
@@ -94,10 +94,10 @@ Configuration should be done in **config.py**.
 
 [Options]
 ```
-python main.py --gpu=[GPU_number] --epoch=[Epochs to train]
+python main.py --gpu=[GPU_number] --channel_epoch=[Epochs to train the individual channels] --joint_epoch=[Epochs to trian the channels jointly]
 ```
 
-MLP weights of channel Y,U,V will be saved in **weights_y.txt**, **weights_u.txt**, **weights_v.txt**.
+MLP weights of channel Y,U,V for smooth/texture network will be saved in **weights_smooth_y.txt**, **weights_smooth_u.txt**, **weights_smooth_v.txt, weights_texture_y.txt**, **weights_texture_u.txt**, **weights_texture_v.txt**.
 
 ### Test (Compression)
 
