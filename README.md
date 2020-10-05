@@ -32,6 +32,8 @@ to utilize the AAC as our entropy coder, we quantize the obtained real-valued co
 
 <p align="center"><img src="figure/method2.png" width="700"></p>
 
+The pixel estimator generally shows a good estimation performance in smooth areas and relatively poor in texture regions. In other words, the network shows different behavior depending on the area, and thus it would be beneficial to have a different network for each type of region. In this respect, we propose a duplex network, where one is specialized for the smooth and the other for the textured.
+
 ## Experimental Results
 
 **Results on compression performance**
@@ -50,13 +52,19 @@ Comparision of computation time (CPU time in seconds). We compared times for 512
 
 <p align="center"><img src="figure/result_ablation.png" width="500"></p>
 
+Ablation study of our method on DIV2K dataset.
+
 **Prediction Error**
 
 <p align="center"><img src="figure/result_prederror.png" width="1000"></p>
 
+Visualization of the magnitude of prediction errors compared to different methods.
+
 **Coding Context**
 
 <p align="center"><img src="figure/result_ctx.png" width="1000"></p>
+
+Analysis of the predicted coding contexts.
 
 **Test Data**
 
