@@ -52,11 +52,11 @@ Comparision of computation time (CPU time in seconds). We compared times for 512
 
 **Prediction Error**
 
-<p align="center"><img src="figure/result_prederror.png" width="350"></p>
+<p align="center"><img src="figure/result_prederror.png" width="700"></p>
 
 **Coding Context**
 
-<p align="center"><img src="figure/result_ctx.png" width="350"></p>
+<p align="center"><img src="figure/result_ctx.png" width="700"></p>
 
 **Test Data**
 
