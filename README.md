@@ -88,20 +88,9 @@ Analysis of the predicted coding contexts.
 
 ## Guidelines for Codes
 
-### Training
-
-Configuration should be done in **config.py**.
-
-[Options]
-```
-python main.py --gpu=[GPU_number] --channel_epoch=[Epochs to train the individual channels] --joint_epoch=[Epochs to trian the channels jointly]
-```
-
 MLP weights of channel Y,U,V for smooth/texture network will be saved in **weights_smooth_y.txt**, **weights_smooth_u.txt**, **weights_smooth_v.txt, weights_texture_y.txt**, **weights_texture_u.txt**, **weights_texture_v.txt**.
 
 ### Test (Compression)
-
-Make sure MLP weights.txt and input images are saved at c_compression/x64/Release.
 
 **Encoding**
 ```
