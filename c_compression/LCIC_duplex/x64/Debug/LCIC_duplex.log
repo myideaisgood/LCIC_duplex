@@ -1,6 +1,0 @@
-﻿  main.cpp
-d:\호창\논문\2020 ieee tip\코드\lcic_duplex\lcic_duplex\lcic_duplex\main.cpp(47): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\호창\논문\2020 ieee tip\코드\lcic_duplex\lcic_duplex\lcic_duplex\main.cpp(92): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\호창\논문\2020 ieee tip\코드\lcic_duplex\lcic_duplex\lcic_duplex\main.cpp(51): warning C4101: 'st' :참조되지 않은 지역 변수입니다.
-d:\호창\논문\2020 ieee tip\코드\lcic_duplex\lcic_duplex\lcic_duplex\main.cpp(52): warning C4101: 'cur_bpp' :참조되지 않은 지역 변수입니다.
-  LCIC_duplex.vcxproj -> D:\호창\논문\2020 IEEE TIP\코드\LCIC_duplex\LCIC_duplex\x64\Debug\LCIC_duplex.exe
