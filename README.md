@@ -4,9 +4,9 @@ Hochang Rhee, Yeong Il Jang, Seyun Kim, and Nam Ik Cho
 
 ## Environments
 - Ubuntu 18.04
-- [Tensorflow 1.9](http://www.tensorflow.org/)
-- CUDA 9.0 & cuDNN 7.6.5
-- Python 3.5.5
+- [Tensorflow 1.13.1](http://www.tensorflow.org/)
+- CUDA 10.0.130 & cuDNN 7.6.5
+- Python 3.7.7
 
 ## Abstract
 
