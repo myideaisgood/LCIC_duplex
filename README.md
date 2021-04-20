@@ -8,6 +8,13 @@ Hochang Rhee, Yeong Il Jang, Seyun Kim, and Nam Ik Cho
 - CUDA 10.0.130 & cuDNN 7.6.5
 - Python 3.7.7
 
+You can type the following command to easily build the environment.
+Download the 'lcic_duplex.yml' and type the following command.
+
+```
+conda env create -f lcic_duplex.yml
+```
+
 ## Abstract
 
 This paper presents a new lossless color image compression method based on the learning of pixel values and coding contexts through a multiplayer perceptron (MLP). The pixel prediction error and contexts are forwarded to an adaptive arithmetic encoder, like the conventional lossless compression schemes. The neural net-based prediction has long been attempted for the lossless compression, and recently convolutional neural networks (CNNs) are also adopted for the lossy/lossless coding. While the existing MLP-based lossless compression schemes focused only on the accurate pixel prediction, we jointly predict the pixel values and coding contexts. We also propose channel-wise progressive learning, residual learning, and duplex network in this MLPbased framework, which leads to improved coding gain compared to the conventional method. Experiments show that the proposed method performs better or comparable to the recent learningbased and conventional compression methods.
