@@ -1,0 +1,27 @@
+﻿  arithmetic_codec.cpp
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\arithmetic_codec.cpp(805,33): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\arithmetic_codec.cpp(806,28): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+  decode.cpp
+  encode.cpp
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(53,9): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(70,232): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(74,229): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(78,218): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(239,20): warning C4244: '+=': 'WEIGHT_TYPE'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(240,20): warning C4244: '+=': 'WEIGHT_TYPE'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(241,20): warning C4244: '+=': 'WEIGHT_TYPE'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(258,26): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(259,26): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(260,26): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(465,9): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\encode.cpp(505,12): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\main.cpp(51,27): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\main.cpp(96,54): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\main.cpp(55,15): warning C4101: 'st' :참조되지 않은 지역 변수입니다.
+D:\Github\LCIC_duplex\test\LCIC_duplex\LCIC_duplex\main.cpp(56,9): warning C4101: 'cur_bpp' :참조되지 않은 지역 변수입니다.
+  ppm_io.cpp
+  utils.cpp
+  코드를 생성하고 있습니다...
+  LCIC_duplex.vcxproj -> D:\Github\LCIC_duplex\test\LCIC_duplex\x64\Debug\LCIC_duplex.exe
