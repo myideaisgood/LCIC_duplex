@@ -34,6 +34,17 @@ to utilize the AAC as our entropy coder, we quantize the obtained real-valued co
 
 The pixel estimator generally shows a good estimation performance in smooth areas and relatively poor in texture regions. In other words, the network shows different behavior depending on the area, and thus it would be beneficial to have a different network for each type of region. In this respect, we propose a duplex network, where one is specialized for the smooth and the other for the textured.
 
+## Dataset
+Train Dataset
+[DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
+
+Test Dataset
+[DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
+
+[FLICKR2K] dataset/FLICKR2K 100 images randomly sampled from (https://github.com/limbee/NTIRE2017)
+
+[Classic] dataset/classic : airplane, barbara, coastguard, comic, flowers, goldhill, lena, mandrill, monarch, pepper, ppt3, zebra
+
 ## Experimental Results
 
 **Results on compression performance**
