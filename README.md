@@ -9,7 +9,7 @@ Hochang Rhee, Yeong Il Jang, Seyun Kim, and Nam Ik Cho
 - Python 3.7.7
 
 You can type the following command to easily build the environment.
-Download the 'lcic_duplex.yml' and type the following command.
+Download 'lcic_duplex.yml' and type the following command.
 
 ```
 conda env create -f lcic_duplex.yml
@@ -32,7 +32,7 @@ This paper presents a new lossless color image compression method based on the l
 
 ### <u>Overall framework of proposed method</u>
 
-<p align="center"><img src="figure/figure1.pdf" width="700"></p>
+<p align="center"><img src="figure/figure1.png" width="700"></p>
 
 We first apply a reversible color transform proposed in to the input RGB images to decorrelate the color components. Then, for each encoding pixel, prediction for the pixel value and coding context are simultaneously generated in the raster scan order. Afterward,
 to utilize the AAC as our entropy coder, we quantize the obtained real-valued coding contexts into N steps, where the level of the quantized coding context is proportional to the magnitude of the local activity. In AAC, individual entropy coder is employed for each quantized coding context, because the statistics of prediction error differs depending on the local activity. Finally, the prediction error is compressed into a bitstream based on the corresponding quantized coding context through the AAC.
@@ -43,20 +43,22 @@ The pixel estimator generally shows a good estimation performance in smooth area
 
 ## Dataset
 Train Dataset
+
 [DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
 
 Test Dataset
+
 [DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
 
 [FLICKR2K] dataset/FLICKR2K 100 images randomly sampled from (https://github.com/limbee/NTIRE2017)
 
-[Classic] dataset/classic : airplane, barbara, coastguard, comic, flowers, goldhill, lena, mandrill, monarch, pepper, ppt3, zebra
+[Classic] dataset/classic
 
 ## Experimental Results
 
 **Results on compression performance**
 
-<p align="center"><img src="figure/result_bpp.png" width="1000"></p>
+<p align="center"><img src="figure/result_bpp_new.png" width="1000"></p>
 
 Comparison of our method with other engineered and learning based codecs. We measure the performances in bits per pixel (bpp). The difference in percentage to our method is highlighted in green if our method outperforms and in red otherwise.
 
@@ -84,13 +86,6 @@ Visualization of the magnitude of prediction errors compared to different method
 
 Analysis of the predicted coding contexts.
 
-**Test Data**
-
-[MCM]   (https://www4.comp.polyu.edu.hk/~cslzhang/CDM_Dataset.htm)
-
-[DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
-
-[Flickr2K] (https://github.com/limbee/NTIRE2017)
 
 ## Brief explanation of contents
 
@@ -109,9 +104,35 @@ Analysis of the predicted coding contexts.
 
 ## Guidelines for Codes
 
+### Train (Weight Training)
+Code in directory "python_weights_training"
+
+Run the following command for training the network.
+
+```
+python main.py
+```
+
+Adjust the argument "crop_size" to handle train images that are of small size.
+
+```
+python main.py --crop_size=128
+```
+
 MLP weights of channel Y,U,V for smooth/texture network will be saved in **weights_smooth_y.txt**, **weights_smooth_u.txt**, **weights_smooth_v.txt, weights_texture_y.txt**, **weights_texture_u.txt**, **weights_texture_v.txt**.
 
 ### Test (Compression)
+Code in directory "c_compression".
+
+Place the MLP weights **weights_smooth_y.txt**, **weights_smooth_u.txt**, **weights_smooth_v.txt, weights_texture_y.txt**, **weights_texture_u.txt**, **weights_texture_v.txt** in directory under "c_compression/LCIC_duplex/.
+
+Place the desired evaluation data in "c_compression/LCIC_duplex/data/".
+The evaluation data needs to be in the form of ppm.
+
+Run the code.
+
+### Test (Excutable)
+File in directory "executable".
 
 **Encoding**
 ```
