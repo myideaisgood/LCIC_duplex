@@ -95,12 +95,15 @@ Analysis of the predicted coding contexts.
 ## Brief explanation of contents
 
 ```
+├── c_compression : c++ code for compressing images with MLP weights obtained from python code
+    └──> LCIC_duplex   : weights & images should be saved here
+├── dataset : evaluation dataset
+├── executable : executable of our method
 ├── python_weights_training : python code for training MLP weights
     ├──> ckpt    : trained models will be saved here
     ├──> board   : tensorboard logs will be saved here
     └──> dataset/train : train data should be saved here (no test data required for MLP training)
-└── c_compression : c++ code for compressing images with MLP weights obtained from python code
-    └──> x64/Release    : weights & images should be saved here
+└── lcic_duplex.yml : enviroment of our method
 
 ```
 
