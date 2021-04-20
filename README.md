@@ -4,9 +4,9 @@ Hochang Rhee, Yeong Il Jang, Seyun Kim, and Nam Ik Cho
 
 ## Environments
 - Ubuntu 18.04
-- [Tensorflow 1.9](http://www.tensorflow.org/)
-- CUDA 9.0 & cuDNN 7.6.5
-- Python 3.5.5
+- [Tensorflow 1.13.1](http://www.tensorflow.org/)
+- CUDA 10.0.130 & cuDNN 7.6.5
+- Python 3.7.7
 
 ## Abstract
 
@@ -33,6 +33,17 @@ to utilize the AAC as our entropy coder, we quantize the obtained real-valued co
 <p align="center"><img src="figure/method2.png" width="700"></p>
 
 The pixel estimator generally shows a good estimation performance in smooth areas and relatively poor in texture regions. In other words, the network shows different behavior depending on the area, and thus it would be beneficial to have a different network for each type of region. In this respect, we propose a duplex network, where one is specialized for the smooth and the other for the textured.
+
+## Dataset
+Train Dataset
+[DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
+
+Test Dataset
+[DIV2K] (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
+
+[FLICKR2K] dataset/FLICKR2K 100 images randomly sampled from (https://github.com/limbee/NTIRE2017)
+
+[Classic] dataset/classic : airplane, barbara, coastguard, comic, flowers, goldhill, lena, mandrill, monarch, pepper, ppt3, zebra
 
 ## Experimental Results
 
