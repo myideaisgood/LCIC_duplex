@@ -58,7 +58,7 @@ Test Dataset
 
 **Results on compression performance**
 
-<p align="center"><img src="figure/result_bpp_new.png" width="1000"></p>
+<p align="center"><img src="figure/result_bpp.png" width="1000"></p>
 
 Comparison of our method with other engineered and learning based codecs. We measure the performances in bits per pixel (bpp). The difference in percentage to our method is highlighted in green if our method outperforms and in red otherwise.
 
@@ -76,7 +76,7 @@ Ablation study of our method on DIV2K dataset.
 
 **Prediction Error**
 
-<p align="center"><img src="figure/result_prederror.png" width="1000"></p>
+<p align="center"><img src="figure/result_prederror.png" width="600"></p>
 
 Visualization of the magnitude of prediction errors compared to different methods.
 
