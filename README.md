@@ -148,3 +148,17 @@ LCIC_duplex.exe d [compressed_file (bin)] [decoded_file (ppm)]
 
 In case of compreesed_file_y.bin, compressed_file_u.bin, compressed_file_v.bin, the input should be compressed_file.bin.
 Creates decoded_file.ppm.
+
+
+## Citation
+If you use the work released here for your research, please cite this paper.
+
+```
+@article{rhee2021lossless,
+  title={Lossless Image Compression by Joint Prediction of Pixel and Context Using Duplex Neural Networks},
+  author={Rhee, Hochang and Jang, Yeong Il and Kim, Seyun and Cho, Nam Ik},
+  journal={IEEE Access},
+  year={2021},
+  publisher={IEEE}
+}
+```
